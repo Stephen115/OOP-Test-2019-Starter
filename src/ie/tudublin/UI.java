@@ -8,12 +8,12 @@ import processing.data.TableRow;
 
 public class UI extends PApplet
 {	
-	private ArrayList<colours> Colour = new ArrayList<colours>();
+	private ArrayList<Colour> Colour = new ArrayList<Colour>();
 
-	public Color findColor(int value)
-	{
+	//public Colour findColour(int value)
+	//{
 
-	}
+	//}
 
 	public void loadColours() {
         Table table = loadTable("colours.csv", "colour");
@@ -36,7 +36,7 @@ public class UI extends PApplet
 
 	public void printColours() {
         int i = 1;
-        for (Colours c : colours) {
+        for (Colour c : Colour) {
             System.out.println(i + ": " + c.toString());
             i++;
         }
@@ -58,6 +58,10 @@ public class UI extends PApplet
 	}
 	
 	public void draw()
-	{			
+	{
+		rect(250, 400, 100, 200);
+		//rect();
+		//rect();
+		//rect();
 	}
 }

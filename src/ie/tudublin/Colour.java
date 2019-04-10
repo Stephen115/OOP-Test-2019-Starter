@@ -2,7 +2,7 @@ package ie.tudublin;
 
 import processing.data.TableRow;
 
-public class Colours
+public class Colour
 {
     private String colour;
     public int r;
@@ -18,7 +18,7 @@ public class Colours
 
     public String geColour()
     {
-        return Colour;
+        return colour;
     }
 
     public int getR() {
