@@ -5,10 +5,10 @@ import processing.data.TableRow;
 public class Colours
 {
     private String colour;
-    private int r;
-    private int g;
-    private int b;
-    private int value;
+    public int r;
+    public int g;
+    public int b;
+    public int value;
     
 
     public void setColour(String colour)
@@ -29,28 +29,33 @@ public class Colours
         this.r = r;
     }
 
-    public float getG() {
+    public int getG() {
         return g;
     }
 
-    public void setG(float g) {
+    public void setG(int g) {
         this.g = g;
     }
 
-    public float getB() {
+    public int getB() {
         return b;
     }
 
-    public void setB(float b) {
+    public void setB(int b) {
         this.b = b;
     }
 
-    public float getValue() {
+    public int getValue() {
         return value;
     }
 
-    public void setValue(float b) {
+    public void setValue(int b) {
         this.value = value;
+    }
+
+    public String toString()
+    {
+        return colour + "\t" + r + "\t" + g + "\t" + b + "\t" + value;
     }
 
     public Colour(TableRow row)
